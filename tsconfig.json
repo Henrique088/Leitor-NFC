@@ -1,8 +1,16 @@
 {
-  "extends": "@react-native/typescript-config",
-
-   "compilerOptions": {
-    
-    "esModuleInterop": true
-  }
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "index.js", "jest.config.js"]
 }
